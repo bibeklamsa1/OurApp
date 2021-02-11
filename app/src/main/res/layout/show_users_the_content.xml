@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+
+    android:layout_marginTop="5dp"
+    android:padding="15dp"
+    android:background="@drawable/rectugular_background"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/linear_layout_username_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#ffffff"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/uploaded_user_name"
+            android:layout_width="220dp"
+            android:layout_height="match_parent"
+            android:text="TextView"
+            android:layout_marginStart="5dp"
+            android:gravity="left|bottom"
+            android:textColor="@color/purple_700"
+            android:textStyle="italic"
+            android:textSize="15dp"
+             />
+
+        <TextView
+
+            android:id="@+id/uploaded_date"
+            android:layout_width="159dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="10dp"
+            android:gravity="center|bottom"
+            android:text="TextView"
+            android:textColor="@color/purple_500"
+            android:textSize="10dp"
+            tools:layout_editor_absoluteX="246dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/upload_content_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="This is descrpiton"
+
+        android:textSize="20dp"
+        android:padding="10dp"
+        android:background="@drawable/background"
+        app:layout_constraintTop_toBottomOf="@+id/linear_layout_username_date"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <com.github.barteksc.pdfviewer.PDFView
+        android:id="@+id/user_uploaede_pdf"
+        android:layout_width="408dp"
+        android:layout_height="350dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/upload_content_description"
+        app:layout_constraintVertical_bias="0.0">
+
+    </com.github.barteksc.pdfviewer.PDFView>
+
+    <RelativeLayout
+        android:layout_width="360dp"
+        android:layout_height="75dp"
+        android:background="@drawable/rectugular_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/user_uploaede_pdf"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints">
+
+        <ImageButton
+            android:id="@+id/delete_show_content"
+            android:layout_width="40dp"
+
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="22dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/ic_baseline_delete_outline_24" />
+
+        <ImageButton
+            android:id="@+id/add_toFavourate"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="22dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/ic_baseline_favorite_border_24" />
+
+        <ImageButton
+            android:id="@+id/download_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignStart="@id/add_toFavourate"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="10dp"
+
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/ic_baseline_cloud_download_24" />
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
