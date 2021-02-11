@@ -2,6 +2,7 @@
 <h1>Student Helper Application</h1>
 <h3>You can use this application for downloading ,uploading,sharing information like pdf which makes easy to learn subjects.</h3>
 <p> Anyone can post the useful materials in any subject .</p>
+
 <table border="1" cellpadding="5" cellspacing="10" style="gravity:center;">
 <tr><th>
 #LoginPage
@@ -84,3 +85,12 @@
  </tr>
  
   </table>
+  
+  
+  <h1>TechnologyUsed while creating this app:</h1><br>
+  <ol>
+  <li>Kotlin</li>
+  <li>Firebase</li>
+  <li>PdfView</li>
+  <li>CircularImageView</li>
+  </ol>
