@@ -87,7 +87,7 @@
   </table>
   
   
-  <h1>TechnologyUsed while creating this app:</h1><br>
+  <h3>TechnologyUsed while creating this app:</h3><br>
   <ol>
   <li>Kotlin</li>
   <li>Firebase</li>
